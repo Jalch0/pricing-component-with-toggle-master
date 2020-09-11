@@ -7,13 +7,18 @@ body {
 }
 
 .header {
-    
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 .title {
-
+    margin-left: .6em;
+    font-weight: bold;
+    opacity: .6;
 }
 
+/* switch */
 .checkbox {
     display: none;
 }
@@ -23,11 +28,11 @@ body {
     
 }
 .switch {
-    height: 40px;
+    height: 35px;
     display: block;
     border-radius: 20px;
     background-image: linear-gradient(to right, var(--Blue1) 0%, var(--Blue2) 100%);
-    width: 80px;
+    width: 60px;
     padding: 5px;
     box-sizing: border-box;
     cursor: pointer;
@@ -37,14 +42,37 @@ body {
 .switch::before {
     content:"";
     display:block;
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     background: var(--VeryLightGrayishBlue);
     border-radius:50%;
-    transform: translateX(40px);
+    transform: translateX(25px);
     transition: .3s;
     will-change: transform;
+}
 
+.switch:active {
+    opacity: .3;
+}
+
+/* switch alignment */
+
+.switcher {
+    display:flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.Annually {
+    margin-right: 1em;
+    opacity: .3;
+    font-weight: bold;
+}
+
+.Monthly {
+    margin-left: 1em;
+    opacity: .3;
+    font-weight: bold;
 }
 
 /* pseudoclasses */
