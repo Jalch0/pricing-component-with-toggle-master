@@ -13,6 +13,7 @@ body {
 }
 
 .title {
+    margin-top: 1.5em;
     margin-left: .6em;
     font-weight: bold;
     opacity: .6;
@@ -28,6 +29,7 @@ body {
     
 }
 .switch {
+    margin-top: .5em;
     height: 35px;
     display: block;
     border-radius: 20px;
@@ -89,10 +91,10 @@ body {
 body::after {
     position:absolute;
     content:"";
-    width: 50%;
-    height: 40%;
-    top: 0;
-    right: 0;
+    width: 80%;
+    height: 60%;
+    top: -1.5em;
+    right: -9em;
     background-image:url(/images/bg-top.svg);
     background-size: contain;
     background-repeat: no-repeat;
@@ -100,8 +102,18 @@ body::after {
     z-index: -1;
 }
 
+/* container  */
 
+.container{
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    border: 1px solid gray;
+}
 
+.planbasic {
+    border: 1px solid red;
+}
 
 
 @media screen and (min-width: 375px){
