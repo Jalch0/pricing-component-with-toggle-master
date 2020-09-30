@@ -6,6 +6,7 @@ body {
     background: var(--VeryLightGrayishBlue);
 }
 
+
 .header {
     display: flex;
     justify-content: center;
@@ -91,10 +92,10 @@ body {
 body::after {
     position:absolute;
     content:"";
-    width: 80%;
-    height: 60%;
-    top: -1.5em;
-    right: -9em;
+    width: 82%;
+    height: 72%;
+    top: -1em;
+    right: -7.5em;
     background-image:url(/images/bg-top.svg);
     background-size: contain;
     background-repeat: no-repeat;
@@ -105,15 +106,37 @@ body::after {
 /* container  */
 
 .container{
-    display:flex;
-    justify-content: center;
-    align-content: center;
-    border: 1px solid gray;
+
 }
 
+/* Basic */
+
 .planbasic {
-    border: 1px solid red;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    background-image: linear-gradient(to right, var(--Blue1) 0%, var(--Blue2) 100%);
+    margin: 1.5em;
+    border-radius: 1em;
+    color: var(--DarkGrayishBlue);
 }
+
+
+
+.titlemonthly{
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.basicmonthly {
+    font-weight: bold;
+    font-size: 4em;
+    margin: 0;
+    padding: .5em;
+    border: 1px solid purple;
+    padding-bottom: .5em;
+}
+
 
 
 @media screen and (min-width: 375px){
