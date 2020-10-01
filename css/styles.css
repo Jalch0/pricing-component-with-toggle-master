@@ -90,23 +90,23 @@ body {
 }
 
 body::after {
-    position:absolute;
+    position: fixed;
     content:"";
-    width: 82%;
-    height: 72%;
-    top: -1em;
-    right: -7.5em;
+    width: 100%;
+    height: 64%;
+    top: -2.3em;
+    right: -9.3em;
     background-image:url(/images/bg-top.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top right;
     z-index: -1;
+
 }
 
 /* container  */
 
 .container{
-
 }
 
 /* Basic */
@@ -115,7 +115,7 @@ body::after {
     display: flex;
     flex-direction:column;
     align-items:center;
-    background-image: linear-gradient(to right, var(--Blue1) 0%, var(--Blue2) 100%);
+    background: white;
     margin: 1.5em;
     border-radius: 1em;
     color: var(--DarkGrayishBlue);
@@ -124,19 +124,50 @@ body::after {
 
 
 .titlemonthly{
-    font-size: 1em;
+    font-size: 1.3em;
     font-weight: bold;
+    margin-top: 1.3em;
 }
 
-.basicmonthly {
+.monthlybasic {
     font-weight: bold;
     font-size: 4em;
     margin: 0;
-    padding: .5em;
-    border: 1px solid purple;
-    padding-bottom: .5em;
+    border-bottom: 1px solid #DDDDDC;
+    padding: 0 30px 25px 30px;
 }
 
+
+.capacitybasic{
+    border-bottom: 1px solid #DDDDDC;
+    padding: 15px 69px 15px 69px;
+    margin: 0;
+}
+.usersbasic{
+    border-bottom: 1px solid #DDDDDC;
+    padding: 15px 69px 15px 69px;
+    margin: 0;
+}
+
+.memorybasic{
+    border-bottom: 1px solid #DDDDDC;
+    padding: 15px 69px 15px 69px;
+    margin: 0;
+}
+
+.areabottom {
+    padding: 1em;
+}
+
+.bottombasic {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white;
+    text-decoration: none;
+    background-image: linear-gradient(to right, var(--Blue1) 0%, var(--Blue2) 100%);
+    padding: .8em 5.5em .8em 5.5em;
+    border-radius: .3em;
+}
 
 
 @media screen and (min-width: 375px){
