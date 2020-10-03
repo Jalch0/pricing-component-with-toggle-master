@@ -131,25 +131,34 @@ h2 {
     font-size: 4em;
     margin: 0;
     border-bottom: 1px solid #DDDDDC;
-    padding: 0 30px 25px 30px;
+    padding: 0 0 25px 0;
+    width: 84%;
+    text-align: center;
 }
 
 .capacity {
     border-bottom: 1px solid #DDDDDC;
-    padding: 15px 69px 15px 69px;
+    padding: 15px;
+    width: 75%;
     margin: 0;
+    text-align: center;
 }
 
 .users {
     border-bottom: 1px solid #DDDDDC;
-    padding: 15px 69px 15px 69px;
+    padding: 15px;
     margin: 0;
+    width: 75%;
+    text-align: center;
+
 }
 
 .memory {
     border-bottom: 1px solid #DDDDDC;
-    padding: 15px 69px 15px 69px;
+    padding: 15px;
     margin: 0;
+    width: 75%;
+    text-align: center;
 }
 
 .bottom {
@@ -180,6 +189,10 @@ h2 {
 .cardprofessional {
     background-image: linear-gradient( var(--Blue1) 0%, var(--Blue2) 100%);
     color: white;
+}
+
+.capacityprof {
+
 }
 
 .bottomprofessional {
