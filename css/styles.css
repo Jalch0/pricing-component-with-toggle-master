@@ -103,18 +103,6 @@ body::after {
     z-index: -1;
 }
 
-body::before {
-    position: fixed;
-    content:"";
-    width: 50%;
-    height: 50%;
-    background-image:url(/images/bg-bottom.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: left bottom;
-    z-index: -1;
-}
-
 /* container  */
 
 h2 {
@@ -222,12 +210,26 @@ h2 {
 }
 @media screen and (min-width: 375px){
 
+    body::before {
+        position: fixed;
+        content:"";
+        width: 30%;
+        height: 50%;
+        top: 25em;
+        background-image:url(/images/bg-bottom.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        z-index: -1;
+    }
+
     .container{
         display: inline-flex;
         justify-content: center;
         width: 100%;
         margin: 3em 0 0 0;
     }
+    
     .cardbasic {
         margin: 2em 10.4em 0 10.4em;
     }
